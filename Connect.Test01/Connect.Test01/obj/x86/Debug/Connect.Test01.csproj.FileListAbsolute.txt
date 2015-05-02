@@ -1,0 +1,8 @@
+C:\Users\tlogan\Documents\GitHub\EmotivTests\Connect.Test01\Connect.Test01\bin\x86\Debug\Connect.Test01.exe.config
+C:\Users\tlogan\Documents\GitHub\EmotivTests\Connect.Test01\Connect.Test01\bin\x86\Debug\Connect.Test01.exe
+C:\Users\tlogan\Documents\GitHub\EmotivTests\Connect.Test01\Connect.Test01\bin\x86\Debug\Connect.Test01.pdb
+C:\Users\tlogan\Documents\GitHub\EmotivTests\Connect.Test01\Connect.Test01\bin\x86\Debug\DotNetEmotivSDK-vs2010.dll
+C:\Users\tlogan\Documents\GitHub\EmotivTests\Connect.Test01\Connect.Test01\bin\x86\Debug\DotNetEmotivSDK-vs2010.pdb
+C:\Users\tlogan\Documents\GitHub\EmotivTests\Connect.Test01\Connect.Test01\obj\x86\Debug\Connect.Test01.csprojResolveAssemblyReference.cache
+C:\Users\tlogan\Documents\GitHub\EmotivTests\Connect.Test01\Connect.Test01\obj\x86\Debug\Connect.Test01.exe
+C:\Users\tlogan\Documents\GitHub\EmotivTests\Connect.Test01\Connect.Test01\obj\x86\Debug\Connect.Test01.pdb
