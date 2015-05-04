@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AECHackathon.Emotiv.Revit",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AECHackathon.Emotiv.DataStream", "AECHackathon.Emotiv.DataStream\AECHackathon.Emotiv.DataStream.csproj", "{8B34E789-9B26-40E7-9AD3-6C18DF86FE48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamo.Emotiv", "Dynamo.Emotiv\Dynamo.Emotiv.csproj", "{4246B35A-442C-45CD-87EB-9A5D5C3DAC4E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,14 @@ Global
 		{8B34E789-9B26-40E7-9AD3-6C18DF86FE48}.Debug64|Any CPU.Build.0 = Debug|Any CPU
 		{8B34E789-9B26-40E7-9AD3-6C18DF86FE48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B34E789-9B26-40E7-9AD3-6C18DF86FE48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4246B35A-442C-45CD-87EB-9A5D5C3DAC4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4246B35A-442C-45CD-87EB-9A5D5C3DAC4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4246B35A-442C-45CD-87EB-9A5D5C3DAC4E}.Debug32|Any CPU.ActiveCfg = Debug|Any CPU
+		{4246B35A-442C-45CD-87EB-9A5D5C3DAC4E}.Debug32|Any CPU.Build.0 = Debug|Any CPU
+		{4246B35A-442C-45CD-87EB-9A5D5C3DAC4E}.Debug64|Any CPU.ActiveCfg = Debug|Any CPU
+		{4246B35A-442C-45CD-87EB-9A5D5C3DAC4E}.Debug64|Any CPU.Build.0 = Debug|Any CPU
+		{4246B35A-442C-45CD-87EB-9A5D5C3DAC4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4246B35A-442C-45CD-87EB-9A5D5C3DAC4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

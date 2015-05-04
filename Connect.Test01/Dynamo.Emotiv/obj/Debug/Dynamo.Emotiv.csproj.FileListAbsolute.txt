@@ -1,0 +1,5 @@
+C:\Users\tlogan\Documents\GitHub\EmotivTests\Connect.Test01\Dynamo.Emotiv\bin\Debug\Dynamo.Emotiv.dll
+C:\Users\tlogan\Documents\GitHub\EmotivTests\Connect.Test01\Dynamo.Emotiv\bin\Debug\Dynamo.Emotiv.pdb
+C:\Users\tlogan\Documents\GitHub\EmotivTests\Connect.Test01\Dynamo.Emotiv\obj\Debug\Dynamo.Emotiv.csprojResolveAssemblyReference.cache
+C:\Users\tlogan\Documents\GitHub\EmotivTests\Connect.Test01\Dynamo.Emotiv\obj\Debug\Dynamo.Emotiv.dll
+C:\Users\tlogan\Documents\GitHub\EmotivTests\Connect.Test01\Dynamo.Emotiv\obj\Debug\Dynamo.Emotiv.pdb

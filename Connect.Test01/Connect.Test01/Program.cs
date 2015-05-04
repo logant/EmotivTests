@@ -59,7 +59,7 @@ namespace Connect.Test01
         {
             EmoState es = e.emoState;
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("<?xml version=\"1.0\" encoding=\"utf-16\"?>");
+            sb.AppendLine("<?xml version=\"1.0\" encoding=\"utf-8\"?>");
             sb.AppendLine("<Emotiv>");
             sb.AppendLine("\t<State>Blink:" + es.ExpressivIsBlink().ToString() + "</State>");
             sb.AppendLine("\t<State>Left Wink:" + es.ExpressivIsLeftWink().ToString() + "</State>");
@@ -69,7 +69,7 @@ namespace Connect.Test01
             sb.AppendLine("\t<State>Looking Right:" + es.ExpressivIsLookingRight().ToString() + "</State>");
             sb.AppendLine("\t<State>Looking Up:" + es.ExpressivIsLookingUp().ToString() + "</State>");
             sb.AppendLine("\t<State>Clench Extent:" + es.ExpressivGetClenchExtent().ToString() + "</State>");
-            sb.AppendLine("\t<State>Eybrow Extent:" + es.ExpressivGetEyebrowExtent().ToString() + "</State>");
+            sb.AppendLine("\t<State>Eyebrow Extent:" + es.ExpressivGetEyebrowExtent().ToString() + "</State>");
             //sb.AppendLine("\t<State>:" + es.ExpressivGetEyelidState().ToString() + "</State>");
             //sb.AppendLine("\t<State>:" + es.ExpressivGetEyeLocation().ToString() + "</State>");
             sb.AppendLine("\t<State>Lower Face Action:" + es.ExpressivGetLowerFaceAction().ToString() + "</State>");
@@ -81,9 +81,7 @@ namespace Connect.Test01
 
             try
             {
-                FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Write, FileShare.ReadWrite);
-                UnicodeEncoding uniEncoding = new UnicodeEncoding();
-                fs.Write(uniEncoding.GetBytes(sb.ToString()), 0, uniEncoding.GetByteCount(sb.ToString()));
+                File.WriteAllText(filePath, sb.ToString());
             }
             catch { }
         }

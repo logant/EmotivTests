@@ -56,7 +56,7 @@ namespace GH.Emotiv.Connect
             pManager.AddTextParameter("Smile Extent", "smile", "Smile Extent", GH_ParamAccess.item);
             pManager.AddTextParameter("UpperFace", "upperFace", "UpperFace", GH_ParamAccess.item);
             pManager.AddTextParameter("UpperFacePower", "upperPwr", "Upper Face Power", GH_ParamAccess.item);
-
+            
             //pManager.AddTextParameter("Test", "Test", "Test", GH_ParamAccess.item);
         }
 
@@ -75,40 +75,16 @@ namespace GH.Emotiv.Connect
                 XmlDocument xmlDoc = new XmlDocument();
                 try
                 {
-                    string data = string.Empty;
-                    byte[] buffer;
                     using (FileStream fsSource = new FileStream(path, FileMode.Open, FileAccess.Read))
                     {
                         XmlReader xR = XmlReader.Create(fsSource);
                         xmlDoc.Load(xR);
-                        // Read the source file into a byte array. 
-                        byte[] bytes = new byte[fsSource.Length];
-                        int numBytesToRead = (int)fsSource.Length;
-                        int numBytesRead = 0;
-                        while (numBytesToRead > 0)
-                        {
-                            // Read may return anything from 0 to numBytesToRead. 
-                            int n = fsSource.Read(bytes, numBytesRead, numBytesToRead);
-
-                            // Break when the end of the file is reached. 
-                            if (n == 0)
-                                break;
-
-                            numBytesRead += n;
-                            numBytesToRead -= n;
-                        }
-                        numBytesToRead = bytes.Length;
-                        buffer = bytes;
                     }
-                    //data = System.Text.Encoding.UTF8.GetString(buffer);
-                    //System.Windows.Forms.MessageBox.Show(data.ToString());
-                    //XmlTextReader reader = new XmlTextReader(
-                    //xmlDoc.LoadXml(data);
                 }
                 catch (Exception ex)
                 {
                     xmlDoc = null;
-                    test = "Error: " + ex.Message;
+                    System.Windows.Forms.MessageBox.Show("Error\n" + ex.Message);
                 }
                 if (xmlDoc != null)
                 {
