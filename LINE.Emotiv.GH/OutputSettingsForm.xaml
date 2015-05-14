@@ -1,0 +1,138 @@
+﻿<Window x:Class="LINE.Emotiv.GH.OutputSettingsForm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Title="UI Integration"
+             Background="Transparent"
+             WindowStyle="None"
+             AllowsTransparency="True"
+             Height="440" 
+             Width="360" 
+             WindowStartupLocation="Manual">
+    <Window.Resources>
+        <Style x:Key="typicalButtonStyle" TargetType="Button">
+            <Setter Property="Foreground" Value="#FF252525" />
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Background" Value="#FFE8E8E8"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                <GradientStop Color="#FF606060" Offset="1.0"/>
+                                <GradientStop Color="#FF8B8B8B" Offset="0.0"/>
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="BorderBrush">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                <GradientStop Color="#FF606060" Offset="1.0"/>
+                                <GradientStop Color="#FF8B8B8B" Offset="0.0"/>
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Border Background="Transparent" MouseLeftButtonDown="Border_MouseLeftButtonDown">
+        <Grid>
+            <Rectangle Fill="#FF404040" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,5,5,5">
+                <Rectangle.Effect>
+                    <BlurEffect Radius="10"/>
+                </Rectangle.Effect>
+            </Rectangle>
+            <Rectangle Fill="WhiteSmoke" Margin="5,5,5,5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <Rectangle Fill="#FF404040" Width="1" HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="5,5,0,5"/>
+            <Rectangle Fill="#FF404040" Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="5,5,5,0"/>
+            <Rectangle Fill="#FF404040" Width="1" HorizontalAlignment="Right" VerticalAlignment="Stretch" Margin="0,5,5,5"/>
+            <Rectangle Fill="#FF404040" Height="1" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="5,0,5,5"/>
+
+            <!--Buttons-->
+            <Button x:Name="closeButton" Click="closeButton_Click" Style="{StaticResource typicalButtonStyle}" MouseEnter="closeButton_MouseEnter" MouseLeave="closeButton_MouseLeave"
+                    HorizontalAlignment="Right" Width="80" Height="30" VerticalAlignment="Bottom" Margin="0,0,6,6">
+                <Button.Content>
+                    <Grid Width="80" Height="30">
+                        <Rectangle x:Name="closeButtonRect" Fill="Transparent"/>
+                        <TextBlock Text="Cancel" TextAlignment="Center"/>
+                    </Grid>
+                </Button.Content>
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <ContentPresenter Margin="{TemplateBinding Control.Padding}"
+                                          HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}"
+                                          VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}"
+                                          SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}"
+                                          ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}"
+                                          RecognizesAccessKey="True"
+                                          Content="{TemplateBinding ContentControl.Content}"/>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="okButton" Click="okButton_Click" Style="{StaticResource typicalButtonStyle}" MouseEnter="okButton_MouseEnter" MouseLeave="okButton_MouseLeave"
+                    HorizontalAlignment="Right" Width="80" Height="30" VerticalAlignment="Bottom" Margin="0,0,86,6">
+                <Button.Content>
+                    <Grid Width="80" Height="30">
+                        <Rectangle x:Name="okButtonRect" Fill="Transparent"/>
+                        <TextBlock Text="OK" TextAlignment="Center"/>
+                    </Grid>
+                </Button.Content>
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <ContentPresenter Margin="{TemplateBinding Control.Padding}"
+                                          HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}"
+                                          VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}"
+                                          SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}"
+                                          ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}"
+                                          RecognizesAccessKey="True"
+                                          Content="{TemplateBinding ContentControl.Content}"/>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <!--Controls-->
+            
+            <Label Content="Select Outputs" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" FontSize="16" Foreground="#FF404040" FontFamily="Arial" FontWeight="Bold"/>
+            <GroupBox Header="EXPRESSIV States" HorizontalAlignment="Left" Margin="11,35,0,0" VerticalAlignment="Top" Height="177" Width="338">
+                <Grid>
+                    <CheckBox Name="blinkCheckBox" Content="Blink" HorizontalAlignment="Left" Margin="171,10,0,0" VerticalAlignment="Top"/>
+                    <CheckBox Name="lwinkCheckBox" Content="Left Wink" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top"/>
+                    <CheckBox Name="rwinkCheckBox" Content="Right Wink" HorizontalAlignment="Left" Margin="171,31,0,0" VerticalAlignment="Top"/>
+                    <CheckBox Name="lookDownCheckBox" Content="Look Down" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top"/>
+                    <CheckBox Name="lookUpCheckBox" Content="Look Up" HorizontalAlignment="Left" Margin="171,52,0,0" VerticalAlignment="Top"/>
+                    <CheckBox Name="lookLeftCheckBox" Content="Look Left" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top"/>
+                    <CheckBox Name="lookRightCheckBox" Content="Look Right" HorizontalAlignment="Left" Margin="171,73,0,0" VerticalAlignment="Top"/>
+                    <CheckBox Name="clenchCheckBox" Content="Clench" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top"/>
+                    <CheckBox Name="eyebrowCheckBox" Content="Eyebrow" HorizontalAlignment="Left" Margin="171,94,0,0" VerticalAlignment="Top"/>
+                    <CheckBox Name="lfActionCheckBox" Content="Lower Face Action" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top"/>
+                    <CheckBox Name="lfPowerCheckBox" Content="Lower Face Power" HorizontalAlignment="Left" Margin="171,115,0,0" VerticalAlignment="Top"/>
+                    <CheckBox Name="ufActionCheckBox" Content="Upper Face Action" HorizontalAlignment="Left" Margin="10,136,0,0" VerticalAlignment="Top"/>
+                    <CheckBox Name="ufPowerCheckBox" Content="Upper Face Power" HorizontalAlignment="Left" Margin="171,136,0,0" VerticalAlignment="Top"/>
+                    <CheckBox Name="smileCheckBox" Content="Smile" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox Header="AFFECTIV States" HorizontalAlignment="Left" Margin="11,217,0,0" VerticalAlignment="Top" Height="96" Width="338">
+                <Grid>
+                    <CheckBox Name="engagementCheckBox" Content="Engagment/Boredom" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <CheckBox Name="exciteLongCheckBox" Content="Excitement (Long-Term)" HorizontalAlignment="Left" Margin="171,10,0,0" VerticalAlignment="Top"/>
+                    <CheckBox Name="exciteShortCheckBox" Content="Excitement (Short-Term)" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top"/>
+                    <CheckBox Name="frustrationCheckBox" Content="Frustration" HorizontalAlignment="Left" Margin="171,31,0,0" VerticalAlignment="Top"/>
+                    <CheckBox Name="meditationCheckBox" Content="Meditation" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top"/>
+                    <CheckBox Name="valanceCheckBox" Content="Valance" HorizontalAlignment="Left" Margin="171,52,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox Header="COGNATIV States" HorizontalAlignment="Left" Margin="11,318,0,0" VerticalAlignment="Top" Height="76" Width="338">
+                <Grid>
+                    <CheckBox Name="cogActionCheckBox" Content="Cognativ Action" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <CheckBox Name="cogPowerCheckBox" Content="Power" HorizontalAlignment="Left" Margin="171,10,0,0" VerticalAlignment="Top"/>
+                    <CheckBox Name="cogActiveCheckBox" Content="Is Active" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </GroupBox>
+        </Grid>
+    </Border>
+</Window>

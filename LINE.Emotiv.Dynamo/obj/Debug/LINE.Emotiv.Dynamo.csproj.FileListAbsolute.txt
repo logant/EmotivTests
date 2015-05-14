@@ -1,0 +1,6 @@
+G:\Github\EmotivTests\LINE.Emotiv.Dynamo\obj\Debug\LINE.Emotiv.Dynamo.csprojResolveAssemblyReference.cache
+G:\Github\EmotivTests\LINE.Emotiv.Dynamo\bin\Debug\LINE.Emotiv.Dynamo.dll
+G:\Github\EmotivTests\LINE.Emotiv.Dynamo\bin\Debug\LINE.Emotiv.Dynamo.pdb
+G:\Github\EmotivTests\LINE.Emotiv.Dynamo\obj\Debug\LINE.Emotiv.Dynamo.dll
+G:\Github\EmotivTests\LINE.Emotiv.Dynamo\obj\Debug\LINE.Emotiv.Dynamo.pdb
+G:\Github\EmotivTests\LINE.Emotiv.Dynamo\bin\Debug\System.Data.SQLite.dll

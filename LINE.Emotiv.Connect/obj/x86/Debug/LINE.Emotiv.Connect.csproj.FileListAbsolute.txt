@@ -1,0 +1,7 @@
+G:\Github\EmotivTests\LINE.Emotiv.Connect\bin\x86\Debug\EmotiveConnect.exe
+G:\Github\EmotivTests\LINE.Emotiv.Connect\bin\x86\Debug\EmotiveConnect.pdb
+G:\Github\EmotivTests\LINE.Emotiv.Connect\bin\x86\Debug\DotNetEmotivSDK-vs2010.dll
+G:\Github\EmotivTests\LINE.Emotiv.Connect\bin\x86\Debug\System.Data.SQLite.dll
+G:\Github\EmotivTests\LINE.Emotiv.Connect\obj\x86\Debug\EmotiveConnect.exe
+G:\Github\EmotivTests\LINE.Emotiv.Connect\obj\x86\Debug\EmotiveConnect.pdb
+G:\Github\EmotivTests\LINE.Emotiv.Connect\obj\x86\Debug\LINE.Emotiv.Connect.csprojResolveAssemblyReference.cache

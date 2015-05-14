@@ -1,5 +1,0 @@
-C:\Users\tlogan\Documents\GitHub\EmotivTests\Connect.Test01\GH.Emotiv.Connect\bin\x86\Debug64\GH.Emotiv.Connect.dll
-C:\Users\tlogan\Documents\GitHub\EmotivTests\Connect.Test01\GH.Emotiv.Connect\bin\x86\Debug64\GH.Emotiv.Connect.pdb
-C:\Users\tlogan\Documents\GitHub\EmotivTests\Connect.Test01\GH.Emotiv.Connect\obj\x86\Debug64\GH.Emotiv.Connect.dll
-C:\Users\tlogan\Documents\GitHub\EmotivTests\Connect.Test01\GH.Emotiv.Connect\obj\x86\Debug64\GH.Emotiv.Connect.pdb
-C:\Users\tlogan\Documents\GitHub\EmotivTests\Connect.Test01\GH.Emotiv.Connect\obj\x86\Debug64\GH.Emotiv.Connect.csprojResolveAssemblyReference.cache

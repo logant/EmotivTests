@@ -1,0 +1,12 @@
+G:\Github\EmotivTests\LINE.Emotiv.GH\obj\Debug64\LINE.Emotiv.GH.csprojResolveAssemblyReference.cache
+G:\Github\EmotivTests\LINE.Emotiv.GH\obj\Debug64\OutputSettingsForm.baml
+G:\Github\EmotivTests\LINE.Emotiv.GH\obj\Debug64\UISettingsForm.baml
+G:\Github\EmotivTests\LINE.Emotiv.GH\obj\Debug64\OutputSettingsForm.g.cs
+G:\Github\EmotivTests\LINE.Emotiv.GH\obj\Debug64\UISettingsForm.g.cs
+G:\Github\EmotivTests\LINE.Emotiv.GH\obj\Debug64\LINE.Emotiv.GH_MarkupCompile.cache
+G:\Github\EmotivTests\LINE.Emotiv.GH\obj\Debug64\LINE.Emotiv.GH.g.resources
+G:\Github\EmotivTests\LINE.Emotiv.GH\bin\LINE.Emotiv.GH.dll.config
+G:\Github\EmotivTests\LINE.Emotiv.GH\bin\LINE.Emotiv.GH.dll
+G:\Github\EmotivTests\LINE.Emotiv.GH\bin\LINE.Emotiv.GH.pdb
+G:\Github\EmotivTests\LINE.Emotiv.GH\obj\Debug64\LINE.Emotiv.GH.dll
+G:\Github\EmotivTests\LINE.Emotiv.GH\obj\Debug64\LINE.Emotiv.GH.pdb

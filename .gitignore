@@ -17,6 +17,12 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Archives
+/_archive
+
+# Full SDK
+/lib/emotiv_SDK
+
 # =========================
 # Operating System Files
 # =========================

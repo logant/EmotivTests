@@ -1,0 +1,6 @@
+G:\Github\EmotivTests\LINE.Emotiv.Connect\bin\Debug\EmotiveConnect.exe
+G:\Github\EmotivTests\LINE.Emotiv.Connect\bin\Debug\EmotiveConnect.pdb
+G:\Github\EmotivTests\LINE.Emotiv.Connect\bin\Debug\System.Data.SQLite.pdb
+G:\Github\EmotivTests\LINE.Emotiv.Connect\obj\Debug\LINE.Emotiv.Connect.csprojResolveAssemblyReference.cache
+G:\Github\EmotivTests\LINE.Emotiv.Connect\obj\Debug\EmotiveConnect.exe
+G:\Github\EmotivTests\LINE.Emotiv.Connect\obj\Debug\EmotiveConnect.pdb
